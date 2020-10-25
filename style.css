@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    width: 1440px;
+    display: grid;
+    grid-template:  1fr 200px / 1440px;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('./imgs/your_verse_hero.jpg');
+    background-position: bottom;
+    width: 1440px;
+    height: 538px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    top: 12%;
+    margin-left: -40px;
+}
+
+.navbar ul {
+    display: inline-flex;
+    list-style: none;
+}
+
+.navbar li {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 102px;
+    height: 36x;
+    padding: 7px;
+    border-right: 1px solid gray;
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%, rgb(94, 94, 94) 100%);
+    color: white;
+}
+
+.navbar li:hover {
+    cursor: pointer;
+    background: rgb(56, 56, 56);
+}
+
+.navbar li:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.navbar li:last-child {
+    display: flex;
+    width: 132px;
+    border-right: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.search-box {
+    display: flex;
+    position: relative;
+}
+
+.search-box span {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.md-18 {
+    font-size: 16px;
+    color: #000;
+}
+
+.search-box input {
+   width: 100%;
+    border-radius: 12px;
+    height: 19px;
+    padding: 2px 18px 1px 22px;
+}
+
+.hero-text{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+#your-verse-title {
+    width: 980px;
+    height: 104px;
+    padding-bottom: 125px;
+}
+
+#your-verse-subhead {
+    width: 980px;
+    height: 82px;
+    position: absolute;
+    top: 94px;
+}
+
+#cta-your-verse {
+    width: 980px;
+    height: 64px;
+    position: absolute;
+    top: 170px;
+    object-fit: cover;
+    object-position: 0 30px;
+}
+
+.images {
+    display: grid;
+    grid-template: 200px / 25% 25% 25% 25%;
+    padding-right: 7px;
+}
+
+.images img {
+    border: 2px solid white;
+}
+
+footer {
+    display: grid;
+    grid-template: 100% / 50% 50%;
+    font-size: 10px;
+    width: 1200px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 2%;
+    line-height: 1.7;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 110px;
+    margin-bottom: 0;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-left-bottom {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-left li {
+    padding-left: 5px;
+}
